@@ -1,6 +1,11 @@
 name: Deployment React Application
 
-on: push
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '.github/workflows/*'
 
 permissions:
   contents: write
